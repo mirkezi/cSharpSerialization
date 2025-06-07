@@ -15,11 +15,12 @@ public static class Deserializers
             UserAge = reader.ReadInt32(),
         };
     }
+    
     public static Person DeserializeFromXml(string filePath)
     {
         var xmlSerializer = new XmlSerializer(typeof(Person));
         using (var reader = new StreamReader(filePath))
-        return (Person)xmlSerializer.Deserialize(reader);
+            return (Person)xmlSerializer.Deserialize(reader);
 
     }
     

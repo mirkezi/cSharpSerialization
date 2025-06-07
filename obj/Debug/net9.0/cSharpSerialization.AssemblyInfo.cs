@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cSharpSerialization")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd0139abfcb50bc0cce57c09b4f6135360ad82d7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5350cabe18128c6d84790dc5c32c502db429bffd")]
 [assembly: System.Reflection.AssemblyProductAttribute("cSharpSerialization")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cSharpSerialization")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
