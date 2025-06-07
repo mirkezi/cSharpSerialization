@@ -49,10 +49,36 @@ public class Program
         {
             Console.WriteLine($"Binary deserialization failed: {ex.Message}");
         }
+
         // XML Serialization
+        try
+        {
+            var xmlSerializer = new XmlSerializer(typeof(Person));
+            using (var writer = new StreamWriter("person.xml"))
+            {
+                xmlSerializer.Serialize(writer, mirko);
+                Console.WriteLine("Xml serialization completed.");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Xml serialization failed: {ex.Message}");
+        }
 
         // XML Deserialization
-
+        try
+        {
+            var xmlSerializer = new XmlSerializer(typeof(Person));
+            using (var reader = new StreamReader("person.xml"))
+            {
+                var deserializedPerson2 = (Person)xmlSerializer.Deserialize(reader);
+                Console.WriteLine($"Xml deserialization completed. Name: {deserializedPerson2.UserName} , Age: {deserializedPerson2.UserAge} ");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Xml deserialization failed: {ex.Message}");
+        }
         // Json Serialization
 
         // Json Deserialization
