@@ -13,7 +13,7 @@ public class Program
     static void Main()
     {
         //Instantiate new Person object
-        var mirko = new Person { UserName = "mirko", UserAge = 33 };
+        var mirko = new Person { UserName = "Mirko", UserAge = 33 };
 
         // Binary Serialization
         try
@@ -42,7 +42,7 @@ public class Program
                     UserName = reader.ReadString(),
                     UserAge = reader.ReadInt32(),
                 };
-                Console.WriteLine($"Binary deserialization completed. Name: {deserializedPerson1.UserName} , Age: {deserializedPerson1.UserAge}");
+                Console.WriteLine($"Binary deserialization completed. Name: {deserializedPerson1.UserName} , Age: {deserializedPerson1.UserAge}.");
             }
         }
         catch (Exception ex)
@@ -72,17 +72,36 @@ public class Program
             using (var reader = new StreamReader("person.xml"))
             {
                 var deserializedPerson2 = (Person)xmlSerializer.Deserialize(reader);
-                Console.WriteLine($"Xml deserialization completed. Name: {deserializedPerson2.UserName} , Age: {deserializedPerson2.UserAge} ");
+                Console.WriteLine($"Xml deserialization completed. Name: {deserializedPerson2.UserName} , Age: {deserializedPerson2.UserAge}.");
             }
         }
         catch (Exception ex)
         {
             Console.WriteLine($"Xml deserialization failed: {ex.Message}");
         }
+
         // Json Serialization
+        try
+        {
+            var jsonString = JsonSerializer.Serialize(mirko);
+            File.WriteAllText("person.json", jsonString);
+            Console.WriteLine("Json serialization completed.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Json serialization failed: {ex.Message}");
+        }
 
         // Json Deserialization
-
-
+        try
+        {
+            var jsonString = File.ReadAllText("person.json");
+            var deserializedPerson3 = JsonSerializer.Deserialize<Person>(jsonString);
+            Console.WriteLine($"Json deserialization completed. Name: {deserializedPerson3.UserName} , Age: {deserializedPerson3.UserAge}.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Json deserialization failed: {ex.Message}");
+        }
     }
 }

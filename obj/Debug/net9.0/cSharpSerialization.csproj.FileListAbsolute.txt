@@ -1,0 +1,15 @@
+C:\Users\mirko\Desktop\Projects\ghSerializationDeserialization\cSharpSerialization\bin\Debug\net9.0\cSharpSerialization.exe
+C:\Users\mirko\Desktop\Projects\ghSerializationDeserialization\cSharpSerialization\bin\Debug\net9.0\cSharpSerialization.deps.json
+C:\Users\mirko\Desktop\Projects\ghSerializationDeserialization\cSharpSerialization\bin\Debug\net9.0\cSharpSerialization.runtimeconfig.json
+C:\Users\mirko\Desktop\Projects\ghSerializationDeserialization\cSharpSerialization\bin\Debug\net9.0\cSharpSerialization.dll
+C:\Users\mirko\Desktop\Projects\ghSerializationDeserialization\cSharpSerialization\bin\Debug\net9.0\cSharpSerialization.pdb
+C:\Users\mirko\Desktop\Projects\ghSerializationDeserialization\cSharpSerialization\obj\Debug\net9.0\cSharpSerialization.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mirko\Desktop\Projects\ghSerializationDeserialization\cSharpSerialization\obj\Debug\net9.0\cSharpSerialization.AssemblyInfoInputs.cache
+C:\Users\mirko\Desktop\Projects\ghSerializationDeserialization\cSharpSerialization\obj\Debug\net9.0\cSharpSerialization.AssemblyInfo.cs
+C:\Users\mirko\Desktop\Projects\ghSerializationDeserialization\cSharpSerialization\obj\Debug\net9.0\cSharpSerialization.csproj.CoreCompileInputs.cache
+C:\Users\mirko\Desktop\Projects\ghSerializationDeserialization\cSharpSerialization\obj\Debug\net9.0\cSharpSerialization.sourcelink.json
+C:\Users\mirko\Desktop\Projects\ghSerializationDeserialization\cSharpSerialization\obj\Debug\net9.0\cSharpSerialization.dll
+C:\Users\mirko\Desktop\Projects\ghSerializationDeserialization\cSharpSerialization\obj\Debug\net9.0\refint\cSharpSerialization.dll
+C:\Users\mirko\Desktop\Projects\ghSerializationDeserialization\cSharpSerialization\obj\Debug\net9.0\cSharpSerialization.pdb
+C:\Users\mirko\Desktop\Projects\ghSerializationDeserialization\cSharpSerialization\obj\Debug\net9.0\cSharpSerialization.genruntimeconfig.cache
+C:\Users\mirko\Desktop\Projects\ghSerializationDeserialization\cSharpSerialization\obj\Debug\net9.0\ref\cSharpSerialization.dll
